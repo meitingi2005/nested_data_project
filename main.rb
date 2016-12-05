@@ -34727,13 +34727,13 @@ def school_code_info(schools,max)
       default_message # if the number is greater than the max then return the default message
     end
   end
-  return array
+  return array # return the array that holds all the school name
 end
 
 def run(schools)
   puts "What is the maximum student size you want?"
   user_num= gets.chomp.to_i
-puts school_code_info(schools,user_num)
+puts school_code_info(schools,user_num) # run the first method using the input that user provided in the previous question
 end
   run(school_code)
 
